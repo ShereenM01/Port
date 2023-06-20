@@ -1,10 +1,11 @@
+/*header section start*/
 *{
-    padding: 0;
-    margin: 0;
+    padding: relative;
+    margin: relative;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing:border-box;
 }
-.hero{
+.heading{
     height: 100vh;
     width: 100%;
     background-image: url(background.jpg);
@@ -25,7 +26,7 @@ nav{
     letter-spacing: 1px;
     cursor: pointer;
 }
-span{
+em{
     color:purple
 }
 nav ul li{
@@ -57,42 +58,39 @@ nav ul li a:hover{
     transform: scale(1.2);
 }
 .content{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 45%;
     left: 8%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    font-size:22px;
 }
-h1{
+.content p:nth-child(2){
     color: white;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 65px;
+    
 }
-h3{
-    color:white;
-    font-size: 25px;
-    margin-bottom: 50px;
+.content p{
+    color: #fcfc;
+    font-size: relative ;
+    margin-bottom: 40px;
+    font-size: larger;
 }
-h4{
-    color:#fcfc;
-    letter-spacing: 2px;
-    font-size: 20px;
-}
-.newsletter form{
+.newsletter{
     width: 380px;
+    min-width: none;
     max-width: 100%;
     position:relative;
 }
-.newsletter form input:first-child{
-    display: inline-block;
+.newsletter input:first-child{
     width: 100%;
     padding: 14px 130px 14px 15px;
     border: 2px solid  purple;
     outline: none;
-    border-radius: 30px;
+    border-radius: 40px;
 }
-.newsletter form input:last-child{
+.newsletter input:last-child{
     position: absolute;
-    display: inline-block;
     outline: none;
     border: none;
     padding: 10px 30px;
@@ -103,6 +101,8 @@ h4{
     top: 6px;
     right: 6px;
 }
+/* About section start*/
+
 .about{
     width: 100%;
     padding: 100px 0px;
@@ -148,8 +148,8 @@ button{
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
+    padding: 15px 40px;
+    border-radius: 60px;
     transition: .4s;
 }
 button:hover{
@@ -157,12 +157,13 @@ button:hover{
     border: 2px solid purple;
     cursor: pointer;
 }
+/* services section start*/
 .service{
     background: #000;
     width: 100%;
     padding: 100px 0px;
 }
-.title h2{
+.title{
     color: white;
     font-size: 75px;
     width: 1130px;
@@ -176,11 +177,11 @@ button:hover{
     min-height: 400px;
 }
 .card{
-    height: 365px;
+    height: 380px;
     width: 335px;
     padding: 20px 35px;
     background: #191919;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 15px;
     position: relative;
     overflow: hidden;
@@ -190,7 +191,7 @@ button:hover{
     font-size: 50px;
     display: block;
     text-align: center;
-    margin: 25px 0px;
+    margin: 20px 0px;
     color: purple;
 }
 h5{
@@ -198,7 +199,7 @@ h5{
     font-size: 23px;
     margin-bottom: 15px;
 }
-.pra p{
+.summary p{
     color: #fcfc;
     font-size: 16px;
     line-height: 27px;
@@ -219,22 +220,62 @@ h5{
     border: 2px solid  purple;
     color: pointer;
 }
-.Contact-me {
-    width: 100%;
-    height: 290px;
-    background:#191919;
+/* contact starts here*/
+form{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.Contact-me p{
+.contact-form{
+    padding: 20px 35px;
+    background-color: #000;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contact-form input,textarea{
+    display: block;
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: purple;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+    border-color: blackS;
+    border-style: solid;
+    height: auto;
+    
+}
+.contact-form label{
+    margin-left:auto;
+    padding-left: 8px;
     color: white;
+    top:-48px;
+}
+
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background: #000;;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color:#fcfc ;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
-.Contact-me .button-two{
+.contact-me .button-two{
     background-color: purple;
     color: white;
     text-decoration: none;
@@ -244,11 +285,13 @@ h5{
     border-radius: 30px;
     transition: .4s;
 }
-.Contact-me .button-two:hover{
+.contact-me .button-two:hover{
     background-color: transparent;
     border: 2px solid  purple;
     color: pointer;
 }
+/*Footer start here*/
+
 footer{
     position: relative;
     width: 100%;
