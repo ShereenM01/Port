@@ -8,7 +8,7 @@
 .heading{
     height: 100vh;
     max-width: 100%;
-    min-width: relative;
+    min-width: auto;
     background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
@@ -138,6 +138,8 @@ nav ul li a:hover{
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
+    text-align: center;
+   
 }
 .about-text p{
     color: #fcfc;
@@ -145,6 +147,7 @@ nav ul li a:hover{
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+    text-align: center;
 }
 button{
     background-color: purple;
@@ -179,6 +182,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    text-align:center ;
 }
 .card{
     height: 380px;
