@@ -138,7 +138,8 @@ nav ul li a:hover{
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
-    text-align: center;
+    padding: auto;
+   
    
 }
 .about-text p{
@@ -147,7 +148,7 @@ nav ul li a:hover{
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-    text-align: center;
+    
 }
 button{
     background-color: purple;
