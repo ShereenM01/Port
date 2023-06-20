@@ -7,24 +7,27 @@
 }
 .heading{
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
+    min-width: relative;
     background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
 }
 nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
 }
-.logo{
+.heading h2{
     color:white;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    display: flex;
 }
 em{
     color:purple
@@ -43,6 +46,8 @@ nav ul li a{
 nav ul li a:hover{
     color: purple;
     transition: .4s;
+    display: flex;
+    flex-wrap: wrap;
 }
 .btn{
     background-color: purple;
@@ -102,7 +107,6 @@ nav ul li a:hover{
     right: 6px;
 }
 /* About section start*/
-
 .about{
     width: 100%;
     padding: 100px 0px;
@@ -185,7 +189,8 @@ button:hover{
     margin: 15px;
     position: relative;
     overflow: hidden;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: row wrap;
 }
 .card i{
     font-size: 50px;
@@ -199,7 +204,7 @@ h5{
     font-size: 23px;
     margin-bottom: 15px;
 }
-.summary p{
+article p{
     color: #fcfc;
     font-size: 16px;
     line-height: 27px;
