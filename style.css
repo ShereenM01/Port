@@ -1,96 +1,99 @@
-/*header section start*/
+:root{
+    --main-color:#000;
+    --primary-color:#800080;
+    --secondary-color:#ffffff;
+    --teriary-color:#ffccffcc;
+    --teriary2-color:#191919;
+}
 *{
-    padding: relative;
-    margin: relative;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing:border-box;
+    
 }
+/*header section start*/
 .heading{
     height: 100vh;
     max-width: 100%;
-    min-width: auto;
     background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
+   
 }
 nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 3vh;
     padding-left: 8%;
     padding-right: 8%;
 }
 .heading h2{
-    color:white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
+    color:var(--secondary-color);
+    font-size: 2.5rem;
     display: flex;
 }
 em{
-    color:purple
+    color:var(--primary-color)
 }
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding:10px 25px;
+    padding:1vh 2vh;
 }
 nav ul li a{
-    color: white;
+    color:var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 nav ul li a:hover{
-    color: purple;
+    color: var(--primary-color);
     transition: .4s;
     display: flex;
     flex-wrap: wrap;
 }
 .btn{
-    background-color: purple;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 1vw 1vw;
     border-radius: 30px;
     transition: transform .4s;
+   
 }
 .btn:hover{
     transform: scale(1.2);
 }
 .content{
-    position: relative;
-    top: 45%;
-    left: 8%;
-    transform: translateY(-50%);
-    font-size:22px;
+    padding-top: 22%;
+    padding-left: 8%;
+    font-size:1.5rem;
 }
 .content p:nth-child(2){
-    color: white;
-    margin: 20px 0px 20px;
-    font-size: 65px;
+    color: var(--secondary-color);
+    margin: 2vh 0vh 2vh;
+    font-size: 5rem;
+    font-weight: bold;
     
 }
 .content p{
-    color: #fcfc;
+    color: var(--teriary-color);
     font-size: relative ;
-    margin-bottom: 40px;
+    margin-bottom: 3%;
     font-size: larger;
 }
 .newsletter{
-    width: 380px;
-    min-width: none;
+    width: 22vw;
+    min-width: 10vw;
     max-width: 100%;
     position:relative;
 }
+form > div > input[type="email"]:valid,
 .newsletter input:first-child{
     width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid  purple;
+    padding: 5% 50% 5% 8%;
+    border: 7% solid var(--primary-color);
     outline: none;
     border-radius: 40px;
 }
@@ -98,137 +101,140 @@ nav ul li a:hover{
     position: absolute;
     outline: none;
     border: none;
-    padding: 10px 30px;
+    padding: 0.7vw 1vw;
     border-radius: 30px;
-    background-color: purple;
-    color: white;
-    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     top: 6px;
     right: 6px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* About section start*/
 .about{
     width: 100%;
-    padding: 100px 0px;
-    background-color: #000;
+    padding: 5vw 0vw;
+    background-color: var(--main-color);
 }
 .about img{
     height: auto;
-    width: 430px;
+    width: 35vw;
+    
 }
 .about-text{
-    width: 550px;
+    width: 30vw;
 }
 .main{
-    width: 1130px;
-    max-width: 95%;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .about-text h2{
-    color: white;
-    font-size: 75px;
+    color: var(--secondary-color);
+    font-size: 4.5rem;
     text-transform: capitalize;
-    margin-bottom: 20px;
-}
-.about-text h5{
-    color: white;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    padding: auto;
-   
-   
+    margin-bottom: 2vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 .about-text p{
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
+    color: var(--secondary-color);
+    letter-spacing: 2%;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    padding: auto;
+   
+}
+.about-text p:nth-last-child(2){
+    color: var(--teriary-color);
+    letter-spacing: 3%;
+    line-height: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 10%;
     
 }
 button{
-    background-color: purple;
-    color: white;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
-    border: 2px solid transparent;
+    border: solid transparent;
     font-weight: bold;
-    padding: 15px 40px;
+    padding: 0.5vw 2.5vw;
     border-radius: 60px;
     transition: .4s;
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid purple;
-    cursor: pointer;
+    border: solid var(--primary-color);
 }
 /* services section start*/
 .service{
-    background: #000;
+    background: var(--main-color);
     width: 100%;
     padding: 100px 0px;
 }
 .title{
-    color: white;
-    font-size: 75px;
-    width: 1130px;
-    margin: 30px auto;
+    color: var(--secondary-color);
+    font-size: 5rem;
+    width: 100%;
+    margin: 5% auto;
     text-align: center;
 }
 .box{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 4vh;
     text-align:center ;
+    flex-wrap: wrap;
+    
+
 }
 .card{
-    height: 380px;
-    width: 335px;
-    padding: 20px 35px;
-    background: #191919;
+    height: 40vh;
+    padding: 2vw 2.2vw;
+    background: var(--teriary2-color);
     border-radius: 25px;
-    margin: 15px;
-    position: relative;
+    margin: 1%;
     overflow: hidden;
     flex-direction: row;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
+    max-width: 20rem;
 }
 .card i{
-    font-size: 50px;
+    font-size: 2.5rem;
     display: block;
     text-align: center;
-    margin: 20px 0px;
-    color: purple;
+    margin: 7% 0%;
+    color: var(--primary-color);
 }
 h5{
-    color:white;
-    font-size: 23px;
-    margin-bottom: 15px;
+    color:var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 8%;
 }
-article p{
-    color: #fcfc;
-    font-size: 16px;
-    line-height: 27px;
-    margin-bottom: 25px;
+section p{
+    color: var(--teriary-color);
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 1vw;
 }
 .card .button{
-    background-color: purple;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
-    border: 2px solid transparent;
     font-weight: bold;
-    padding: 9px 30px;
-    border-radius: 30px;
+    padding: 5% 8%;
+    border-radius: 20px;
     transition: .4s;
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid  purple;
-    color: pointer;
+    border: solid  var(--primary-color);
+   
 }
 /* contact starts here*/
 form{
@@ -238,8 +244,8 @@ form{
     justify-content: center;
 }
 .contact-form{
-    padding: 20px 35px;
-    background-color: #000;
+    padding: 0.5%;
+    background-color: var(--main-color);
     margin: auto;
     position: relative;
     align-items: center;
@@ -247,14 +253,17 @@ form{
     justify-content: center;
     
 }
+form > div > input[type="name"]:valid,
+form > div > input[type="email"]:valid,
+form > div > textarea[type="message"]:valid,
 .contact-form input,textarea{
     display: block;
     width: 100%;
-    padding: 17px;
+    padding: 10%;
     border: none;
     outline: none;
-    background: purple;
-    color: black;
+    background: var(--primary-color);
+    color: var(--main-color);
     font-size: 1.1rem;
     margin-bottom: 0.6rem;
     border-radius: 10px;
@@ -265,63 +274,59 @@ form{
 }
 .contact-form label{
     margin-left:auto;
-    padding-left: 8px;
-    color: white;
-    top:-48px;
+    padding-left: 7%;
+    color: var(--secondary-color);
+    top:4%;
 }
 
 .contact-me {
     width: 100%;
-    height: 290px;
-    background: #000;;
+    height: 29vh;
+    background: var(--main-color);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 .contact-me p{
-    color:#fcfc ;
-    font-size: 30px;
+    color:var(--teriary-color) ;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 3%;
 }
 .contact-me .button-two{
-    background-color: purple;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
+    border-radius: 0.5;
     transition: .4s;
 }
 .contact-me .button-two:hover{
-    background-color: transparent;
-    border: 2px solid  purple;
-    color: pointer;
+    border:solid var(--primary-color);
+    
 }
 /*Footer start here*/
 
 footer{
     position: relative;
     width: 100%;
-    height: 400px;
-    background: #101010;
+    height: 35vh;
+    background: var(--teriary2-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 footer p:nth-child(1){
-    font-size: 30px;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 2%;
     font-weight: bold;
 }
 footer p:nth-child(2){
-    color: white;
-    font-size: 17px;
-    width: 500px;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    width: 100%;
     text-align: center;
     line-height: 26px;
 }
@@ -329,17 +334,17 @@ footer p:nth-child(2){
     display: flex;
 }
 .social a{
-    width: 45px;
-    height: 45px;
+    width: 5vw;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:purple ;
-    border-radius: 50%;
-    margin: 22px 10px;
-    color: white;
+    background:var(--primary-color);
+    border-radius: 30px;
+    margin: 20% 10px;
+    color: var(--secondary-color);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 .social a:hover{
     transform: scale(1.3);
@@ -347,9 +352,9 @@ footer p:nth-child(2){
 }
 .end{
     position: absolute;
-    color: purple ;
-    bottom: 35px;
-    font-size: 14px;
+    color: var(--primary-color) ;
+    bottom: 3%;
+    font-size: 1rem;
 }
 
 
